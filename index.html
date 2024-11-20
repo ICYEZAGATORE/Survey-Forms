@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/index.css">
 </head>
 <body>
     <h1>Vaccine Survey Form</h1>
-    <p id="Description">This survey aims to collect data of oour clients and their opinions about Covid q9</p>
+    <p id="Description">This survey aims to collect data of our clients and their opinions about Covid 19</p>
     <div>
         <img src="Screenshot (75).png" alt="">
     </div>
@@ -22,7 +23,7 @@
         
         </div>
 
-        <div></div>
+        <div>
             <span> Email</span>
         </div>
         
@@ -30,68 +31,98 @@
             <input type="email" id="Email" name="Email" placeholder="Enter your email">
         
         </div>
+
+         <div>
+            <span> Contact</span>
+        </div>
+        
+        <div class="inputs">
+            <input type="number" id="ContactInfo" name="ContactInfo" placeholder="0788 000 000">
+        
+        </div>
+        <div></div>
+            <span> Age</span>
+        </div>
+        
+        <div class="inputs" min="15" max="55">
+            <input type="number" id="AGE" name="Age" placeholder="19">
+        
+        </div>
+         <legend></legend>
+                Gender
+            </legend>
+            <div><label for="Male">
+                <input type="radio" name="Gender" id="Male">
+                Male            </label>
+            <label for="Female"></label>
+                <input type="radio" name="Gender" id="Female">
+                Female            </label> 
+            <label for="Prefer"></label>
+                <input type="radio" name="Gender" id="Prefer">
+                Prefer not to say            </label>   
+            </div>          
+        
         </fieldset>
         <fieldset>
             <legend>
                 What is your employment status?
             </legend>
-            <label for="">
-                <input type="radio" name="" id="">
+            <label for="Student">
+                <input type="radio" name="Employment" id="Student">
                 Student            </label>
-             <label for=""></label>
-                <input type="radio" name="" id="">
+             <label for="Employed"></label>
+                <input type="radio" name="Employment" id="Employed">
                 Employed            </label>  
-            <label for=""></label>
-                <input type="radio" name="" id="">
+            <label for="Self-Employed"></label>
+                <input type="radio" name="Employment" id="Self-Employed">
                 Self-Employed            </label>  
-            <label for=""></label>
-                <input type="radio" name="" id="">
+            <label for="Unemployed"></label>
+                <input type="radio" name="Employment" id="Unemployed">
                 Unemployed            </label>  
-            <label for=""></label>
-                <input type="radio" name="" id="">
+            <label for="Unemployed"></label>
+                <input type="radio" name="Employment" id="Unemployed">
                 Unemployed            </label>    
                 
         </fieldset>
         <fieldset>
-            <legend>Are you planning to get the Covid-19 vaccine?</legend>
-            <label for=""></label>
-                    <input type="radio" name="" id=""> Yes
-            </label>
-             <label for=""></label>
-                    <input type="radio" name="" id=""> No
-            </label>
-            <label for=""></label>
-                    <input type="radio" name="" id=""> Not sure yet
-            </label>
+    <legend>Are you planning to get the Covid-19 vaccine?</legend>
+    <label for="vaccine-plan">Choose an option:</label>
+    <select name="vaccine-plan" id="Drop-down">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="not-sure">Not sure yet</option>
+    </select>
+</fieldset>
 
-        </fieldset>
 
         <fieldset></fieldset>
             <legend>Which of the followings define your concerns about getting the vaccine</legend>
-            <label for=""></label>
-                    <input type="radio" name="" id=""> Side effects,long-term safety and efficacy
+            <label for="SideEffects"></label>
+                    <input type="radio" name="YourReasons" id="SideEffects"> Side effects,long-term safety and efficacy
             </label>
-             <label for=""></label>
-                    <input type="radio" name="" id=""> Religious reasons
+             <label for="Religious"></label>
+                    <input type="radio" name="YourReasons" id="Religious"> Religious reasons
             </label>
-            <label for=""></label>
-                    <input type="radio" name="" id=""> Other
-            </label>
-
-        </fieldset>
-        <fieldset></fieldset>
-            <legend>Which of the followings would be helpful if you did not decidde yet?</legend>
-            <label for=""></label>
-                    <input type="radio" name="" id=""> If my doctor would approve
-            </label>
-             <label for=""></label>
-                    <input type="radio" name="" id=""> I want to  wait for a period to observe how people react to the vaccine
-            </label>
-            <label for=""></label>
-                    <input type="radio" name="" id=""> Other
+            <label for="other"></label>
+                    <input type="radio" name="YourReasons" id="Other"> Other
             </label>
 
         </fieldset>
+        <fieldset>
+          <legend>Which of the following would be helpful if you did not decide yet? (Select all that apply)</legend>
+       <label for="doctor-approval">
+        <input type="checkbox" name="helpful-factors" id="doctor-approval" value="doctor-approval"> If my doctor would approve
+    </label>
+    <br>
+    <label for="wait-observe">
+        <input type="checkbox" name="helpful-factors" id="wait-observe" value="wait-observe"> I want to wait for a period to observe how people react to the vaccine
+    </label>
+    <br>
+    <label for="other">
+        <input type="checkbox" name="helpful-factors" id="other" value="other"> Other
+    </label>
+</fieldset>
+
         <div class="YourReasons">
             <span>Please explain your reasons</span>
         </div>
@@ -99,6 +130,11 @@
         <div class="inputs">
             <input type="text" id="" name="" placeholder="Type here ....">
         
+        </div>
+        <div class="button">
+            <button>
+               Submit 
+            </button>
         </div>
         
     </form>
