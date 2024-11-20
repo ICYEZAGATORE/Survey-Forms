@@ -1,5 +1,11 @@
 :root{
-    background-color:#ffffff;
-    border-color: blue;
-    border: 10pc;
+    --background-color:#04231d;
+    --text-color:#000000;
+    --p-color:#0d0d0f;
+    --label-color:#6a6b6d;
+    --border-color:#b3dec9;
+    --hover-color:#74a88a;
+    --font-family: Arial, Helvetica, sans-serif;
+    --border-radius:5px;
+    --white-board:#fff;
 }
