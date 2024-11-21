@@ -7,28 +7,29 @@
     <link rel="stylesheet" type="text/css" href="./Styles/index.css">
 </head>
 <body>
-    <h1>Vaccine Survey Form</h1>
-    <p id="Description">This survey aims to collect data of our clients and their opinions about Covid 19</p>
+    <main><h1 id="title">Vaccine Survey Form</h1>
+    <p id="description">This survey aims to collect data of our clients and their opinions about Covid 19</p>
     <div>
         <img src="Screenshot (75).png" alt="">
     </div>
     <form id="survey-form">
         <fieldset>
             <div>
-            <span> Name</span>
-        </div>
-        
-        <div class="inputs">
-            <input type="text" id="name" name="First-name" placeholder="First name">
+<div>
+                    <label id="name-label" for="name">Name:</label>
+</div>
+
+<input type="text" id="name" name="name" placeholder="First name">
+
         
         </div>
 
         <div>
-            <span> Email</span>
+            <label id="email-label" for="email">Email:</label>
         </div>
         
         <div class="inputs">
-            <input type="email" id="Email" name="Email" placeholder="Enter your email">
+            <input type="email" id="email" name="Email" placeholder="Enter your email">
         
         </div>
 
@@ -40,12 +41,12 @@
             <input type="number" id="ContactInfo" name="ContactInfo" placeholder="0788 000 000">
         
         </div>
-        <div></div>
-            <span> Age</span>
+        <div>
+            <label id="number-label" for="age">Age:</label>
         </div>
         
-        <div class="inputs" min="15" max="55">
-            <input type="number" id="AGE" name="Age" placeholder="19">
+        <div class="inputs">
+            <input type="number" id="AGE" name="Age" placeholder="19" min="15" max="55">
         
         </div>
          <legend></legend>
@@ -118,9 +119,10 @@
         <input type="checkbox" name="helpful-factors" id="wait-observe" value="wait-observe"> I want to wait for a period to observe how people react to the vaccine
     </label>
     <br>
-    <label for="other">
-        <input type="checkbox" name="helpful-factors" id="other" value="other"> Other
-    </label>
+<label for="helpful-other">
+    <input type="checkbox" name="helpful-factors" id="helpful-other" value="other"> Other
+</label>
+
 </fieldset>
 
         <div class="YourReasons">
@@ -128,17 +130,18 @@
         </div>
         
         <div class="inputs">
-            <input type="text" id="" name="" placeholder="Type here ....">
+            <textarea id="comments" name="comments" placeholder="Type your reasons here..."></textarea>
+
         
         </div>
         <div class="button">
-            <button>
+            <button id="submit" type="submit">
                Submit 
             </button>
         </div>
         
     </form>
 
-
+</main>
 </body>
 </html>
