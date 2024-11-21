@@ -51,7 +51,42 @@ h1, p{
     margin: 0;   
 }
 
-    
+    label {
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    font-size: 1rem; 
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* Full width for consistency */
+    padding: 10px; /* Inner padding for inputs */
+    margin-bottom: 16px; /* Space between inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Consistent text size */
+    box-sizing: border-box;}
 
+textarea {
+    height: 100px; 
+    resize: vertical;}
 
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px; }
+label.inline {
+    display: inline-block;
+    margin-right: 20px;}
+
+    img {
+    display: block; 
+    width: 100%;
+    height: auto; 
+    max-width: 100%;
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
 
